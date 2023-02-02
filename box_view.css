@@ -1,0 +1,106 @@
+
+        
+             #student{
+                padding:30px;
+                
+                 background-color: rgb(217, 243, 145);
+                 height: 2.5cm;
+                 width: 4cm;
+                 display: float;
+                 float: left;
+                 margin-top: 2cm;
+                 margin-left: 2.5cm;
+                 border-radius: 10px;
+                 
+
+             }
+             #student:hover{
+              
+              border: 2px solid black;
+              padding: 35px;
+              background-color:yellow;
+              cursor: pointer;
+             }
+             #teach:hover{
+              
+              border: 2px solid black;
+              padding: 35px;
+              background-color:yellow;
+              cursor: pointer;
+             }
+             
+             #fee:hover{
+              
+              border: 2px solid black;
+              padding: 35px;
+              background-color:yellow;
+              cursor: pointer;
+             }
+                
+             
+             #teach{
+                
+                 padding:30px;
+                 
+                 background-color: rgb(217, 243, 145);
+                 height: 2.5cm;
+                 width: 4cm;
+                 display: float;
+                 float: left;
+                 margin-top: 2cm;
+                 margin-left: 2.5cm;
+                 border-radius: 10px;
+
+
+
+                
+                 
+                 
+
+             }
+             #fee{
+                padding:30px;
+                
+                 background-color: rgb(217, 243, 145);
+                 margin-top: 2cm;
+                 height: 2.5cm;
+                 width: 4cm;
+                 display: float;
+                 float: left;
+                 margin-left: 2.5cm;
+                 border-radius: 10px;
+
+
+             }
+
+             #bal{
+                padding:30px;
+                
+                 background-color:rgb(46, 202, 116);
+                 margin-top: 1cm;
+                 height: 5cm;
+                 width: 8cm;
+                 display: float;
+                 float: left;
+                 margin-left: 3cm;
+                 border-radius: 10px;
+
+
+             }
+             #att{
+                padding:30px;
+                
+                 background-color:rgb(46, 202, 116);
+                 margin-top: 1cm;
+                 height: 5cm;
+                 width: 8cm;
+                 display: float;
+                 float: left;
+                 margin-left: 4cm;
+                 border-radius: 10px;
+
+
+             }
+progress{
+    height: 0.5cm;
+}

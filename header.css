@@ -1,0 +1,45 @@
+nav{
+    padding:15px;
+    background-color: aqua;
+    border-radius: 20px;
+}
+#home{
+    text-decoration-line: none;
+    font-size:20px;
+    font-weight: 900;
+    padding:10px;
+    margin-right: 750px;
+
+}
+#stud{
+   text-decoration-line: none;
+    font-size:20px;
+    font-weight: 900;
+    padding:10px;
+}
+#admin{
+    text-decoration-line: none;
+    font-size:20px;
+    font-weight: 900;
+    padding:10px;
+}
+#teacher{
+    text-decoration-line: none;
+    font-size:20px;
+    font-weight: 900;
+    padding:10px;
+}
+#logout{
+    text-decoration-line: none;
+    font-size:20px;
+    font-weight: 900;
+    padding:10px;
+    margin-left: 200px;
+}
+
+
+
+a:hover{
+    color: tomato;
+    
+}

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="header.css" rel="stylesheet" type="text/css">
+        <link href="body.css" rel="stylesheet" type="text/css">
+        <link href="sidebar.css" rel="stylesheet" type="text/css">
+        <link href="add.css" rel="stylesheet" type="text/css">
+
+        
+        <title>Admin Page</title>
+        
+             
+
+        </head>
+        <header>
+            <nav>
+                <a id="home" href="#" >Home</a>
+                
+                <a id="logout" href="admin_logout.php">Logout</a>
+                
+                
+            </nav>
+        </header>
+        <body>
+           <div class="sidebar">
+               
+                <li>
+                <ul> <a id="sidemenu" href="add_student.html">ADD STUDENT</a></ul>
+              
+              <ul> <a id="sidemenu" href="update_student.php">UPDATE STUDENT</a></ul>
+              <ul> <a id="sidemenu" href="make_class_teacher.html">PROMOTE</a></ul>
+               
+              <ul> <a id="sidemenu" href="update_teacher.php">UPDATE TEACHER</a></ul>
+              <ul> <a id="sidemenu"href="fees_collect.php">FEE COLLECTION</a></ul>
+              <ul> <a id="sidemenu"href="admin_view.php">VIEW</a></ul>
+              </li>
+           
+
+
+       </div>  
+       
+    <div id="adding_form">
+        <h2><center>ADD TEACHER </center></h2>
+        <form action="add_teacher.php" method="post" id="addform" onSubmit="return validate();">
+        
+            <p>
+                <label>NAME:</label>
+            <input type="text" name="name"  id="name" required placeholder=" "></input>
+            </p>
+
+            <p>
+            <label>Teacher ID:</label>
+            <input type="text" name="tid"  id="reg" required placeholder=" "></input>
+            </p>
+
+            <p>
+             <label>Gender:</label>
+            <input type="radio" name="gender" value="male" id="gender" required> MALE</input>
+            <input type="radio" name="gender" value="female"  id="gender" required> FEMALE</input>
+            <input type="radio" name="gender" value="other"  id="gender" required>Others </input>
+            </p>
+
+            <p>
+            <label>Phone:</label>
+            <input type="text" name="phone"  id="phone" required placeholder=" "></input>
+            </p>
+
+            <p>
+            <label>Email:</label>
+            <input type="text" name="email"  id="email" required placeholder=" "></input>
+            </p>
+
+            <p>
+                <label>DOB:</label>
+                <input type="date" name="bdate"  id="date"  ></input>
+                </p>
+            
+            
+            <p>        
+                <label>Address:</label>
+               <input type="text" name="address"  id="address" required placeholder=" "></input>
+               </p>
+
+               <p>        
+                <label>Subject handles:</label>
+                <select name="sub"   id="std" required>
+                    <option value="">Select option</option>
+                    <option value="KA_01">Kannada</option>
+                    <option value="EN_02">English</option> 
+                    <option value="HI_03">Hindi</option>
+                    <option value="MA_06">Maths</option>
+                    <option value="SC_05">Science</option>
+                    <option value="SS_04">Social Science</option>
+                    <option value="CA_07">Craft and Arts</option>
+                    <option value="COM_08">Computer</option>
+                </select>
+               </p>
+                 
+                <p>        
+                    <label>Class handles</label>
+                     
+                      <input type="checkbox" name="1st"  value="1">1st </input>
+                     <input type="checkbox" name="2nd"  value="2">2nd </input>
+                     <input type="checkbox" name="3rd"  value="3">3rd </input>
+                     <input type="checkbox" name="4th"  value="4">4th </input>
+                     <input type="checkbox" name="5th"  value="5">5th </input><br/>
+                   <center>
+                      <input type="checkbox" name="6th"  value="6">6th </input>
+                     <input type="checkbox" name="7th"  value="7">7th </input>
+                     <input type="checkbox" name="8th"  value="8">8th </input>
+                     <input type="checkbox" name="9th"  value="9">9th </input>
+                     <input type="checkbox" name="10th"  value="10">10th</input>
+                    </center>   
+                   </p> 
+
+                   
+
+                <p>    
+                <label>Password:</label>
+               <input type="password" name="password" id="password" required placeholder="Enter Password" ></input><span id="more" style="color: red;"></span>
+               </p>
+
+               <p>        
+                <label>confirm password:</label>
+               <input type="password" name="conf_password"  id="conf_password"  placeholder=" "></input><span id="match" style="color: red;"></span>
+               </p>
+            
+                 
+                <p>
+                    <label>Salery:</label>
+                    <input type="text" name="salery"  id="totel" required placeholder=" "></input>
+                    </p>
+
+                   
+                 
+                        
+                
+
+                    
+            <p>
+            <input type="submit" value="ADD" name="ADD" class="btn"/>
+            </p>
+            </form>
+        </div>
+            
+            
+
+            
+            
+    
+    <script>
+    function validate() {
+      var   $valid=true;
+        document.getElementById("more").innerHTML = " ";
+        document.getElementById("match").innerHTML = " ";
+        document.getElementById("cls").innerHTML=" ";
+        
+        
+        var password = document.getElementById("password").value;
+        var conf_password=document.getElementById("conf_password").value;
+        var  class_handles=document.getElementById("role").value;
+         var len=password.length;
+         if(len<5)
+         {
+            document.getElementById("more").innerHTML="password must more than 5 charcter";
+            $valid=false;
+         }
+        else if(password!=conf_password)
+        {
+            document.getElementById("match").innerHTML="password not match";
+            $valid=false;
+        }
+        
+    
+        return $valid;
+       
+    }
+    </script>
+
+        
+            
+           
+        </body>
+        
+
+    
+</html>

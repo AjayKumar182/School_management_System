@@ -1,0 +1,72 @@
+<p>        
+    <label>Role:</label>
+    <select name="role" id="std" required>
+        <option value="">Select option</option>
+        <option value="teacher">Teacher</option> 
+    </select>
+   </p>
+
+
+
+   echo   '" <div id="adding_form">
+    <form method="post" id="addform">
+        <p>
+    <label>RegisterNumber:</label>
+ <input type="text" name="reg"  id="reg" required></input>
+ </p>
+
+  <p>
+  <input type="submit" value="GET DATA" name="GET DATA" class="btn"/>
+</p>
+
+</form>
+</div>"';
+
+font-family: Georgia, serif;
+border: 2px solid black;
+
+<p>
+    <tr><label>RegisterNumber:</label></tr> <label>     </label>
+    <?php echo $reg; ?>
+    </p>
+    <p>
+    <label>NAME:          </label><label>     </label>
+    <?php echo $name; ?>"
+    </p>
+    
+    <p>
+    <label>Phone:        </label><label>       </label>
+    <?php echo $phone; ?>
+    </p>
+    <p>
+    <label>Email:       </label><label>        </label>
+   <?php echo $email; ?>
+    </p>
+
+    <p>
+    <label>DOB:         </label><label>        </label>
+       <?php echo $bdate; ?>
+        </p>
+    
+        <p>
+    <label>Class:       </label><label>       </label>
+       <?php echo $std; ?>   
+     </p>
+
+     <p>        
+     <label>Fathername:  </label><label>      </label>
+      <?php echo $fname; ?>  
+    </p>
+    <p>        
+    <label>Address: </label><label>           </label>
+       <?php echo $address; ?>
+       </p>
+    
+       <p>               
+       
+      
+    <p>
+    <input type="button" value="BACK" name="UPDATE" onclick="back()" class="btn"/>
+    </p>
+</form>
+</div>

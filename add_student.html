@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="header.css" rel="stylesheet" type="text/css">
+        <link href="body.css" rel="stylesheet" type="text/css">
+        <link href="sidebar.css" rel="stylesheet" type="text/css">
+        <link href="add.css" rel="stylesheet" type="text/css">
+
+        
+        <title>Admin Page</title>
+        
+             
+
+        </head>
+        <header>
+            <nav>
+                <a id="home" href="#" >Home</a>
+                
+                <a id="logout" href="admin_logout.php">Logout</a>
+                
+                
+            </nav>
+        </header>
+        
+        <body>
+           <div class="sidebar">
+               
+                <li>
+              
+              <ul> <a id="sidemenu" href="update_student.php">UPDATE STUDENT</a></ul>
+              <ul> <a id="sidemenu" href="add_teacher.html">ADD TEACHER</a></ul>
+               
+              <ul> <a id="sidemenu" href="update_teacher.php">UPDATE TEACHER</a></ul>
+              <ul> <a id="sidemenu"href="fees_collect.php">FEE COLLECTION</a></ul>
+              <ul> <a id="sidemenu"href="admin_view.php">VIEW</a></ul>
+              </li>
+           
+
+
+       </div>  
+       
+    <div id="adding_form">
+        <h2><center>ADD STUDENT </center></h2>
+        <form action="add_student.php" method="post"  id="addform"  onSubmit="return validate();">
+        
+            <p>
+                <label>NAME:</label>
+            <input type="text" name="name"  id="name" required></input>
+            </p>
+            <p>
+            <label>RegisterNumber:</label>
+            <input type="text" name="reg"  id="reg" required></input>
+            </p>
+            <p>
+             <label>Gender:</label>
+            <input type="radio" name="gender" value="male" id="gender" required> MALE</input>
+            <input type="radio" name="gender" value="female"  id="gender" required> FEMALE</input>
+            <input type="radio" name="gender" value="other"  id="gender" required>Others </input>
+            </p>
+            <p>
+            <label>Phone:</label>
+            <input type="text" name="phone"  id="phone" required></input>
+            </p>
+            <p>
+            <label>Email:</label>
+            <input type="text" name="email"  id="email" required ></input>
+            </p>
+            <p>
+                <label>DOB:</label>
+                <input type="date" name="bdate"  id="date" format="yyyy-mm-dd"></input>
+                </p>
+            <p>
+            <label>Class:</label>
+            <select name="std"   id="std" >
+                <option value="">Select option</option>
+                <option value="1">1st</option>
+                <option value="2">2nd</option>
+                <option value="3">3rd</option>
+                <option value="4">4th</option>
+                <option value="5">5th</option>
+                <option value="6">6th</option>
+                <option value="7">7th</option>
+                <option value="8">8th</option>
+                <option value="9">9th</option>
+                <option value="10">10th</option>
+
+
+
+            </select>
+             </p>
+             <p>        
+             <label>Fathername:</label>
+            <input type="text" name="fname" id="fname" required></input>
+            </p>
+            <p>        
+                <label>Address:</label>
+               <input type="text" name="address"  id="address" required></input>
+               </p>
+            <p>        
+                <label>Password:</label>
+               <input type="password" name="password" id="password" required ></input><span id="more" style="color: red;"></span>
+               </p>
+               <p>        
+                <label>confirm password:</label>
+               <input type="password" name="conf_password"  id="conf_password" ></input><span id="match" style="color: red;"></span>
+               </p>
+            
+                 
+                <p>
+                    <label>Totel Fees:</label>
+                    <input type="text" name="totel"  id="totel" required></input>
+                    </p>
+                 <p>
+                        <label>Fees Paid:</label>
+                        <input type="text" name="fee_paid"  id="fee_paid" required > </input>
+                 </p>
+                        <p>
+                            <label>Balence:</label>
+                            <input type="text" name="balence"   id="balance" required></input>
+                            </p>
+                
+
+                    
+            <p>
+            <input type="submit" value="ADD" name="ADD" class="btn"/>
+            </p>
+            </form>
+        </div>
+            
+            
+
+            
+            
+    
+    <script>
+    function validate() {
+      var   $valid=true;
+        document.getElementById("more").innerHTML = " ";
+        document.getElementById("match").innerHTML = " ";
+        
+        
+        var password = document.getElementById("password").value;
+        var conf_password=document.getElementById("conf_password").value;
+         var len=password.length;
+         if(len<5)
+         {
+            document.getElementById("more").innerHTML="password must more than 5 charcter";
+            $valid=false;
+         }
+        else if(password!=conf_password)
+        {
+            document.getElementById("match").innerHTML="password not match";
+            $valid=false;
+        }
+    
+        return $valid;
+       
+    }
+    </script>
+
+        
+            
+           
+        </body>
+        
+
+    
+</html>

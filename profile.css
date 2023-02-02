@@ -1,0 +1,39 @@
+#adding_form{
+    padding: 30px;
+    margin-left: 11cm;
+    margin-top: 20px;
+    margin-right: 300px;
+    background: #ffffff;;
+    border: 1px solid black;
+    border-radius: 30px;
+    
+}
+.btn{
+    padding: 10px;
+    background-color: #5d9cec;
+    color: #f5f7fa;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 30%;
+    border: 1px solid black;
+    font-size: 1.1em;
+    border-radius: 20px;
+    margin-left: 5cm;
+    margin-top: 0.5cm;
+}
+
+input[type="submit"]:hover{
+    color:#164105;
+    font-weight: 800;
+}
+
+table{
+    margin-left: 2cm;
+    margin-top: 1cm;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+th{
+    width :6cm;
+    height: 1cm;
+    
+}
